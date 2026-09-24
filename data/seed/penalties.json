@@ -1,0 +1,92 @@
+[
+  {
+    "id": "P-MAIN-001",
+    "law_id": "L-MAIN-DXB-001",
+    "condition": "Operating after license expiry",
+    "amount_aed": "5,000",
+    "note": "Separate violation fine for Dubai mainland. A late fee of AED 250 per month also accrues.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-MAIN-002",
+    "law_id": "L-MAIN-DXB-001",
+    "condition": "License renewal delay (per month)",
+    "amount_aed": "250",
+    "note": "AED 250 for each month of delay. An additional 10% surcharge applies after 60 days.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-MAIN-003",
+    "law_id": "L-MAIN-DXB-001",
+    "condition": "Operating after administrative closure",
+    "amount_aed": "10,000",
+    "note": "Additional fine if activity continues after a DET administrative closure order.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-FZ-001",
+    "law_id": "L-FZ-DXB-001",
+    "condition": "Operating with an expired license",
+    "amount_aed": "5,000",
+    "note": "Operating in a free zone with an expired license. Some zones add AED 200-500 per day.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-FZ-002",
+    "law_id": "L-FZ-DXB-001",
+    "condition": "Renewal delay (per month, general)",
+    "amount_aed": "500-1,000",
+    "note": "Varies by zone. Some zones charge a one-off renewal penalty of AED 500-1,500.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-FZ-003",
+    "law_id": "L-FZ-DXB-003",
+    "condition": "DMCC — renewal 31-60 days late",
+    "amount_aed": "2,500",
+    "note": "Official DMCC schedule: 0-30 days AED 0, 31-60 days AED 2,500, 61-90 days AED 5,000, 90+ days license cancellation.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-FZ-004",
+    "law_id": "L-FZ-DXB-003",
+    "condition": "DMCC — renewal 61-90 days late",
+    "amount_aed": "5,000",
+    "note": "Official DMCC schedule. After 90 days the license is cancelled and a new application is required.",
+    "effective_from": "2026-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-FZ-005",
+    "law_id": "L-FZ-DXB-001",
+    "condition": "IFZA — financial statements not submitted",
+    "amount_aed": "Renewal blocked",
+    "note": "Financial statements are mandatory for IFZA renewals from 30 September 2025. Without them the license cannot be renewed.",
+    "effective_from": "2025-09-30",
+    "effective_to": null
+  },
+  {
+    "id": "P-CT-001",
+    "law_id": "L-MAIN-DXB-001",
+    "condition": "Late Corporate Tax registration",
+    "amount_aed": "10,000",
+    "note": "Late registration with the Federal Tax Authority. Further monthly penalties accrue afterwards.",
+    "effective_from": "2024-01-01",
+    "effective_to": null
+  },
+  {
+    "id": "P-UBO-001",
+    "law_id": "L-MAIN-DXB-001",
+    "condition": "UBO register violation",
+    "amount_aed": "100,000",
+    "note": "Failure to register shareholders holding 25% or more under Cabinet Decision No. 58 of 2020. The license may be suspended.",
+    "effective_from": "2024-01-01",
+    "effective_to": null
+  }
+]

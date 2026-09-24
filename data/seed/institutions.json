@@ -1,0 +1,114 @@
+[
+  {
+    "id": "I-DET-001",
+    "name": "Dubai Economy and Tourism (DET / DED)",
+    "emirate": "Dubai",
+    "biz_type": "mainland",
+    "address": "Business Bay, Dubai, UAE",
+    "website": "https://www.dubaided.gov.ae",
+    "phone": "+971 4 445 5555",
+    "notes": "Dubai mainland commercial, professional, industrial and tourism licenses."
+  },
+  {
+    "id": "I-ADDED-001",
+    "name": "Abu Dhabi Department of Economic Development (ADDED)",
+    "emirate": "Abu Dhabi",
+    "biz_type": "mainland",
+    "address": "Al Danah, Abu Dhabi, UAE",
+    "website": "https://www.added.gov.ae",
+    "phone": "+971 2 418 8888",
+    "notes": "Abu Dhabi mainland licensing."
+  },
+  {
+    "id": "I-DMCC-001",
+    "name": "Dubai Multi Commodities Centre (DMCC)",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "Almas Tower, JLT, Dubai, UAE",
+    "website": "https://www.dmcc.ae",
+    "email": "customercare@dmcc.ae",
+    "phone": "+971 4 424 9600",
+    "notes": "Commodities trading, crypto and services. Applies its own penalty schedule."
+  },
+  {
+    "id": "I-IFZA-001",
+    "name": "International Free Zone Authority (IFZA)",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "Dubai Silicon Oasis, Dubai, UAE",
+    "website": "https://www.ifza.com",
+    "notes": "Cost-effective packages, startup and SME friendly. Financial statements mandatory for renewals from 2025."
+  },
+  {
+    "id": "I-MEYDAN-001",
+    "name": "Meydan Free Zone",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "Meydan, Dubai, UAE",
+    "website": "https://www.meydanfz.ae",
+    "notes": "Flexible setup, suitable for solo entrepreneurs."
+  },
+  {
+    "id": "I-JAFZA-001",
+    "name": "Jebel Ali Free Zone (JAFZA)",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "Jebel Ali, Dubai, UAE",
+    "website": "https://www.jafza.ae",
+    "notes": "Logistics, manufacturing and large-scale trading. The first UAE free zone, established in 1985."
+  },
+  {
+    "id": "I-DIFC-001",
+    "name": "Dubai International Financial Centre (DIFC)",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "DIFC, Dubai, UAE",
+    "website": "https://www.difc.ae",
+    "notes": "Finance, fintech and legal services. Own regulator and English common law."
+  },
+  {
+    "id": "I-ADGM-001",
+    "name": "Abu Dhabi Global Market (ADGM)",
+    "emirate": "Abu Dhabi",
+    "biz_type": "freezone",
+    "address": "Al Maryah Island, Abu Dhabi, UAE",
+    "website": "https://www.adgm.com",
+    "notes": "Financial services, English common law, 100% foreign ownership."
+  },
+  {
+    "id": "I-RAKEZ-001",
+    "name": "Ras Al Khaimah Economic Zone (RAKEZ)",
+    "emirate": "Ras Al Khaimah",
+    "biz_type": "freezone",
+    "address": "RAKEZ, Ras Al Khaimah, UAE",
+    "website": "https://www.rakez.com",
+    "notes": "Industrial, commercial and service businesses. Competitive packages."
+  },
+  {
+    "id": "I-DAFZA-001",
+    "name": "Dubai Airport Free Zone (DAFZA)",
+    "emirate": "Dubai",
+    "biz_type": "freezone",
+    "address": "Al Garhoud, Dubai, UAE",
+    "website": "https://www.dafza.ae",
+    "notes": "Aviation, logistics and pharmaceuticals."
+  },
+  {
+    "id": "I-FTA-001",
+    "name": "Federal Tax Authority (FTA)",
+    "emirate": null,
+    "biz_type": null,
+    "address": "Abu Dhabi / Dubai, UAE",
+    "website": "https://www.tax.gov.ae",
+    "notes": "Corporate Tax and VAT registration. Late registration penalty AED 10,000."
+  },
+  {
+    "id": "I-MOHRE-001",
+    "name": "Ministry of Human Resources and Emiratisation (MOHRE)",
+    "emirate": null,
+    "biz_type": null,
+    "address": "Dubai / Abu Dhabi, UAE",
+    "website": "https://www.mohre.gov.ae",
+    "notes": "WPS payroll system and work permits. Late salary payment penalties of up to AED 5,000 per employee."
+  }
+]

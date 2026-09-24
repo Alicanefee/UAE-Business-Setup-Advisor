@@ -1,0 +1,90 @@
+[
+  {
+    "id": "L-MAIN-DXB-001",
+    "biz_type": "mainland",
+    "emirate": "Dubai",
+    "activity": "commercial_trading",
+    "title": "Dubai Mainland Commercial License — DET (DED)",
+    "body": "Dubai mainland commercial licenses are issued by Dubai Economy and Tourism (DET, formerly DED). Since Federal Decree-Law No. 32 of 2021, 100% foreign ownership is permitted for most commercial activities. A physical office and Ejari registration are mandatory. The license is annual and must be renewed before expiry. As of 2026, 100% foreign ownership is available for more than 1,000 commercial and industrial activities.",
+    "effective_from": "2021-06-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-MAIN-DXB-002",
+    "biz_type": "mainland",
+    "emirate": "Dubai",
+    "activity": "professional_services",
+    "title": "Dubai Mainland Professional License",
+    "body": "The professional license covers services based on intellectual or artistic skill: consulting, accounting, IT services, legal, marketing and architecture. A Civil Company or LLC structure is used. A physical office and Ejari registration are mandatory. As of 2026, 100% foreign ownership is permitted for most professional activities.",
+    "effective_from": "2021-06-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-MAIN-AUH-001",
+    "biz_type": "mainland",
+    "emirate": "Abu Dhabi",
+    "activity": "general",
+    "title": "Abu Dhabi Mainland License — ADDED",
+    "body": "Abu Dhabi mainland licenses are issued by the Abu Dhabi Department of Economic Development (ADDED). An LLC requires a notarized MOA, a physical office and activities selected from the ADDED-approved activity catalogue. As of 2026, 100% foreign ownership is permitted for most commercial activities.",
+    "effective_from": "2021-06-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-FZ-DXB-001",
+    "biz_type": "freezone",
+    "emirate": "Dubai",
+    "activity": "software_development",
+    "title": "Dubai Free Zone — Software & Technology License",
+    "body": "Software and technology license in Dubai free zones (DMCC, IFZA, Meydan, DSO, DIC and others). 100% foreign ownership, free profit repatriation and customs exemption. Selling directly to the local UAE market requires an additional permit or a local distributor. A flexi-desk or physical office is optional. The license is annual and must be renewed.",
+    "effective_from": "2022-01-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-FZ-DXB-002",
+    "biz_type": "freezone",
+    "emirate": "Dubai",
+    "activity": "consulting",
+    "title": "Dubai Free Zone — Consulting License",
+    "body": "Free zone license for consulting activities, offered by zones such as IFZA, Meydan and DMCC. Well suited to serving overseas clients; direct sales within the UAE are restricted. Requires annual renewal and a KYC update.",
+    "effective_from": "2022-01-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-FZ-DXB-003",
+    "biz_type": "freezone",
+    "emirate": "Dubai",
+    "activity": "commodities_trading",
+    "title": "DMCC — Commodities Trading License",
+    "body": "DMCC (Dubai Multi Commodities Centre) issues licenses for commodities trading, crypto and related services. 100% foreign ownership and free profit repatriation. DMCC applies its own penalty schedule for late renewal: AED 0 within 30 days, AED 2,500 for 31-60 days, AED 5,000 for 61-90 days, and license cancellation after 90 days.",
+    "effective_from": "2022-01-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-FZ-AUH-001",
+    "biz_type": "freezone",
+    "emirate": "Abu Dhabi",
+    "activity": "financial_services",
+    "title": "ADGM — Financial Services License",
+    "body": "Abu Dhabi Global Market (ADGM) has its own regulatory framework for finance, fintech and related professional services. English common law applies. 100% foreign ownership and free profit repatriation.",
+    "effective_from": "2022-01-01",
+    "effective_to": null,
+    "superseded_by": null
+  },
+  {
+    "id": "L-MNC-001",
+    "biz_type": "multinational",
+    "emirate": null,
+    "activity": "regional_hq",
+    "title": "UAE Regional Headquarters (RHQ) License",
+    "body": "Special license for multinational companies establishing a regional headquarters. Available in Dubai or Abu Dhabi. Offers tax incentives and 100% foreign ownership. Requires operations in at least 2 GCC countries.",
+    "effective_from": "2023-01-01",
+    "effective_to": null,
+    "superseded_by": null
+  }
+]

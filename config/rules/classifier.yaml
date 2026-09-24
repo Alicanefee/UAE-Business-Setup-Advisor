@@ -1,0 +1,53 @@
+# Classifier rules — maps a free-text business description onto a legal
+# structure (mainland | freezone | multinational) and an activity code.
+#
+# This file is loaded into the `rules` table at startup and hashed like any
+# other source record. Every classification claim cites it, so a change to
+# these rules is visible in the audit trail.
+version: 1
+
+# Explicit structure keywords. The user's own stated choice wins over rules.
+explicit_types:
+  freezone: ["free zone", "freezone", "free-zone"]
+  mainland: ["mainland", "onshore"]
+explicit_confidence: 0.95
+
+# Activity vocabulary. Order matters: the first matching activity wins, so
+# more specific activities come before general ones.
+activities:
+  regional_hq: ["regional headquarters", "regional hq", "rhq", "regional head office"]
+  commodities_trading: ["commodities", "commodity", "gold", "precious metals", "crypto", "cryptocurrency"]
+  financial_services: ["fintech", "financial services", "asset management", "investment firm", "brokerage"]
+  software_development: ["software", "saas", "app development", "mobile app", "web development", "it company", "tech startup", "technology company"]
+  consulting: ["consulting", "consultancy", "advisory firm", "consultant"]
+  professional_services: ["accounting", "legal services", "law firm", "marketing agency", "architecture", "design studio"]
+  commercial_trading: ["trading", "import", "export", "wholesale", "retail", "e-commerce", "shop", "store"]
+
+# Target market vocabulary.
+target_markets:
+  international: ["overseas", "international", "abroad", "outside the uae", "foreign clients", "global clients", "export"]
+  local: ["local", "in the uae", "uae customers", "uae clients", "local market", "walk-in"]
+
+# Deterministic structure rules, evaluated in order. A condition lists the
+# allowed values per signal; every listed signal must match.
+rules:
+  - id: R-MNC-HQ
+    when: {activity: [regional_hq]}
+    then: multinational
+    confidence: 0.9
+    reason: "Regional headquarters across multiple countries → multinational structure"
+  - id: R-LOCAL-MARKET
+    when: {target_market: [local]}
+    then: mainland
+    confidence: 0.85
+    reason: "Direct sales to the local UAE market → mainland"
+  - id: R-FZ-EXPORT
+    when:
+      activity: [software_development, consulting, commodities_trading, financial_services]
+      target_market: [international]
+    then: freezone
+    confidence: 0.85
+    reason: "Export-oriented activity with 100% foreign ownership → free zone"
+
+# Confidence assigned to signals extracted by the optional LLM fallback.
+llm_confidence: 0.7

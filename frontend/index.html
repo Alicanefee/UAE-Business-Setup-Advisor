@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UAE Business Setup Advisor</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>UAE Business Setup Advisor</h1>
+    <span class="tag">Mainland · Free zones · Multinationals — every claim sourced</span>
+  </header>
+
+  <main id="chat" aria-live="polite">
+    <div class="bubble bot">
+      Describe what you want to do in a sentence — for example:
+      <em>"I want to set up a software company in Dubai; my clients are overseas."</em>
+    </div>
+  </main>
+
+  <form id="composer">
+    <div class="row">
+      <input id="msg" autocomplete="off" placeholder="Describe your business…" aria-label="Message">
+      <button type="submit">Send</button>
+    </div>
+    <div class="row options">
+      <label><input type="checkbox" id="renew"> Renewal</label>
+      <input id="docs" class="hidden" autocomplete="off"
+             placeholder="Documents you hold, separated by ; (e.g. Passport copy; MOA)"
+             aria-label="Documents you hold">
+      <button type="button" id="reset" class="secondary">New conversation</button>
+    </div>
+  </form>
+
+  <script src="/app.js"></script>
+</body>
+</html>

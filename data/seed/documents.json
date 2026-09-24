@@ -1,0 +1,137 @@
+[
+  {
+    "id": "D-MAIN-001",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "Passport Copy (All Shareholders & Managers)",
+    "issuer": "Applicant",
+    "how_to_obtain": "Personal passport copy, valid for at least 6 months.",
+    "is_mandatory": 1,
+    "notes": "All pages, color scan."
+  },
+  {
+    "id": "D-MAIN-002",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "Emirates ID / UAE Visa Copy",
+    "issuer": "ICP / Applicant",
+    "how_to_obtain": "Emirates ID and visa page for UAE residents.",
+    "is_mandatory": 0,
+    "notes": "Non-residents may provide the entry stamp instead."
+  },
+  {
+    "id": "D-MAIN-003",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "Memorandum of Association (MOA)",
+    "issuer": "Notary Public",
+    "how_to_obtain": "Notarized agreement setting out the partners and the capital structure.",
+    "is_mandatory": 1,
+    "notes": "Not required for a single-owner LLC."
+  },
+  {
+    "id": "D-MAIN-004",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "Ejari Tenancy Contract",
+    "issuer": "Dubai Land Department",
+    "how_to_obtain": "Physical office lease registered in the Ejari system.",
+    "is_mandatory": 1,
+    "notes": "A physical office is mandatory for mainland companies."
+  },
+  {
+    "id": "D-MAIN-005",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "No Objection Certificate (NOC)",
+    "issuer": "Current Sponsor",
+    "how_to_obtain": "Required if you currently work in the UAE under another sponsor.",
+    "is_mandatory": 0,
+    "notes": "For employees holding a sponsored visa."
+  },
+  {
+    "id": "D-MAIN-006",
+    "law_id": "L-MAIN-DXB-001",
+    "name": "Trade Name Reservation Certificate",
+    "issuer": "DET / DED",
+    "how_to_obtain": "Apply on the DET portal with 3 alternative trade names.",
+    "is_mandatory": 1,
+    "notes": "Issued after the trade name is approved."
+  },
+  {
+    "id": "D-MAIN-007",
+    "law_id": "L-MAIN-DXB-002",
+    "name": "Qualification Proof / CV",
+    "issuer": "Applicant",
+    "how_to_obtain": "Degree or equivalency certificate for regulated professions.",
+    "is_mandatory": 0,
+    "notes": "May be requested for professional license applications."
+  },
+  {
+    "id": "D-FZ-001",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Passport Copy",
+    "issuer": "Applicant",
+    "how_to_obtain": "Personal passport copy, valid for at least 6 months.",
+    "is_mandatory": 1,
+    "notes": "All shareholders and directors."
+  },
+  {
+    "id": "D-FZ-002",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Proof of Address (Utility Bill)",
+    "issuer": "Applicant",
+    "how_to_obtain": "Electricity, water or credit card statement from the last 3 months.",
+    "is_mandatory": 1,
+    "notes": "Mandatory in some zones."
+  },
+  {
+    "id": "D-FZ-003",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Passport-Size Photograph",
+    "issuer": "Applicant",
+    "how_to_obtain": "Two passport photos with a white background.",
+    "is_mandatory": 1,
+    "notes": "A digital version is also accepted."
+  },
+  {
+    "id": "D-FZ-004",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Application Form with UBO Declaration",
+    "issuer": "Free Zone Authority",
+    "how_to_obtain": "Downloaded from the zone portal; completed with ultimate beneficial owner details.",
+    "is_mandatory": 1,
+    "notes": "Shareholders holding 25% or more must be declared."
+  },
+  {
+    "id": "D-FZ-005",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Business Plan (Brief)",
+    "issuer": "Applicant",
+    "how_to_obtain": "Short English document describing the business model.",
+    "is_mandatory": 0,
+    "notes": "Mandatory for regulated activities in some zones such as DMCC."
+  },
+  {
+    "id": "D-FZ-006",
+    "law_id": "L-FZ-DXB-001",
+    "name": "No Objection Certificate (NOC)",
+    "issuer": "Current Sponsor",
+    "how_to_obtain": "Required if your UAE visa is held under another sponsor.",
+    "is_mandatory": 0,
+    "notes": "For visa holders."
+  },
+  {
+    "id": "D-FZ-007",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Financial Statement (Simplified)",
+    "issuer": "Company Accountant",
+    "how_to_obtain": "IFZA: simplified form if turnover is at most AED 3M and there are at most 9 employees.",
+    "is_mandatory": 0,
+    "notes": "Mandatory for IFZA license renewals from 30 September 2025."
+  },
+  {
+    "id": "D-FZ-008",
+    "law_id": "L-FZ-DXB-001",
+    "name": "Audited Financial Statement",
+    "issuer": "UAE-Registered Auditor",
+    "how_to_obtain": "IFZA: full audit if turnover exceeds AED 3M or there are more than 9 employees.",
+    "is_mandatory": 0,
+    "notes": "IFRS-compliant, signed by a UAE-registered auditor."
+  }
+]

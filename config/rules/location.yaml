@@ -1,0 +1,13 @@
+# Location rules — maps place names and well-known zone names to an emirate.
+version: 1
+
+emirates:
+  Dubai: ["dubai", "dxb", "dmcc", "ifza", "meydan", "jafza", "difc", "dafza", "jlt", "business bay"]
+  Abu Dhabi: ["abu dhabi", "auh", "adgm", "masdar"]
+  Sharjah: ["sharjah", "shams", "saif zone"]
+  Ajman: ["ajman"]
+  Ras Al Khaimah: ["ras al khaimah", "rak", "rakez"]
+  Fujairah: ["fujairah"]
+  Umm Al Quwain: ["umm al quwain", "uaq"]
+
+confidence: 0.95

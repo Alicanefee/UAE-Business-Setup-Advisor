@@ -1,0 +1,12 @@
+# Renewal rules — how documents held by the user are matched against the
+# documents required by the governing license.
+version: 1
+
+# A held document matches a required document when either normalized name
+# contains the other. Held names shorter than this are ignored.
+min_match_length: 3
+
+# Only mandatory documents are reported as missing.
+report_optional_as_missing: false
+
+confidence: 0.9

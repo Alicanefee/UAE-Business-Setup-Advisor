@@ -1,0 +1,51 @@
+[
+  {
+    "id": "A-001",
+    "missing_doc": "Notarized Passport Copy",
+    "alternative_doc": "Consulate-Attested Passport Copy",
+    "conditions": "A consulate stamp is accepted. The copy must be attested by the UAE consulate in the country of origin.",
+    "effective_from": "2024-01-01"
+  },
+  {
+    "id": "A-002",
+    "missing_doc": "Emirates ID / UAE Visa Copy",
+    "alternative_doc": "Entry Visa Stamp + Passport",
+    "conditions": "If a UAE residence permit has not yet been issued, the entry stamp and a passport copy are temporarily accepted.",
+    "effective_from": "2024-01-01"
+  },
+  {
+    "id": "A-003",
+    "missing_doc": "Ejari Tenancy Contract",
+    "alternative_doc": "Flexi-Desk Agreement",
+    "conditions": "Free zone licenses only. A physical office is mandatory for mainland companies.",
+    "effective_from": "2024-01-01"
+  },
+  {
+    "id": "A-004",
+    "missing_doc": "Audited Financial Statement",
+    "alternative_doc": "Financial Statement (Simplified)",
+    "conditions": "IFZA: the simplified form is accepted if turnover is at most AED 3M and there are at most 9 employees.",
+    "effective_from": "2025-09-30"
+  },
+  {
+    "id": "A-005",
+    "missing_doc": "Memorandum of Association (MOA)",
+    "alternative_doc": "Power of Attorney + Draft MOA",
+    "conditions": "If the founder is outside the UAE, a draft MOA can be submitted with a power of attorney. Notarization is completed later.",
+    "effective_from": "2024-01-01"
+  },
+  {
+    "id": "A-006",
+    "missing_doc": "Business Plan (Brief)",
+    "alternative_doc": "Written Business Description",
+    "conditions": "A short written description is sufficient in some free zones. Zones such as DMCC require a full plan.",
+    "effective_from": "2024-01-01"
+  },
+  {
+    "id": "A-007",
+    "missing_doc": "No Objection Certificate (NOC)",
+    "alternative_doc": "Resignation Letter + New Sponsor Approval",
+    "conditions": "If the current sponsor will not issue an NOC, the process can proceed with a resignation letter and the new sponsor's approval.",
+    "effective_from": "2024-01-01"
+  }
+]

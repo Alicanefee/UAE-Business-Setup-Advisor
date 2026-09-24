@@ -1,0 +1,68 @@
+# Golden cases: expected end-to-end behavior against the seed data.
+
+- id: new-freezone-software
+  input: "I want to set up a software company in Dubai, my clients are overseas"
+  expect:
+    type: result
+    biz.type: Free zone
+    location.emirate: Dubai
+    sources_include: ["law:L-FZ-DXB-001", "document:D-FZ-001", "institution:I-IFZA-001"]
+
+- id: new-mainland-trading
+  input: "Trading company in Dubai selling to local customers"
+  expect:
+    type: result
+    biz.type: Mainland
+    sources_include: ["law:L-MAIN-DXB-001", "institution:I-DET-001"]
+
+- id: explicit-structure-wins
+  input: "Mainland trading company in Dubai for overseas buyers"
+  expect:
+    type: result
+    biz.type: Mainland
+
+- id: vague-request
+  input: "I want to start a company"
+  expect:
+    type: question
+    key: describe_business
+
+- id: missing-emirate
+  input: "Software company, overseas clients"
+  expect:
+    type: question
+    key: location
+
+- id: missing-market
+  input: "Software company in Dubai"
+  expect:
+    type: question
+    key: target_market
+
+- id: no-law-for-combination
+  input: "Software company in Dubai selling to local customers"
+  expect:
+    type: abstain
+    reason_prefix: "no_law_in_force"
+
+- id: law-without-document-records
+  input: "Consulting firm in Dubai for international clients"
+  expect:
+    type: abstain
+    reason_prefix: "no_documents_for_law"
+
+- id: renewal-needs-documents
+  input: "Renew my Dubai free zone software license"
+  mode: renew
+  expect:
+    type: question
+    key: upload
+
+- id: renewal-with-documents
+  input: "Renew my Dubai free zone software license"
+  mode: renew
+  documents: ["Passport copy", "Passport-size photograph", "Application form"]
+  expect:
+    type: result
+    missing: ["Proof of Address (Utility Bill)"]
+    sources_include: ["penalty:P-FZ-001", "document:D-FZ-002"]

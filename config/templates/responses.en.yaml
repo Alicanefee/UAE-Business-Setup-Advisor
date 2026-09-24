@@ -1,0 +1,68 @@
+# Response templates (English).
+#
+# Every sentence the user reads comes from this file. Agents only supply
+# verified claims; the composer places them into the slots below. A claim
+# whose slot does not appear here is dropped.
+version: 1
+locale: en
+
+labels:
+  mainland: "Mainland"
+  freezone: "Free zone"
+  multinational: "Multinational (regional HQ)"
+  commercial_trading: "Commercial trading"
+  professional_services: "Professional services"
+  software_development: "Software development"
+  consulting: "Consulting"
+  commodities_trading: "Commodities trading"
+  financial_services: "Financial services"
+  regional_hq: "Regional headquarters"
+
+questions:
+  describe_business: "Could you describe your business in a few words? For example: \"A software company in Dubai; my clients are overseas.\""
+  activity: "What exactly will the company do? For example: software development, consulting, trading, financial services."
+  target_market: "Will you mainly sell to customers inside the UAE, or to clients overseas?"
+  structure: "Would you prefer a mainland license (sell anywhere in the UAE, physical office required) or a free zone license (100% foreign ownership, trade mainly outside the UAE)?"
+  location: "Which emirate do you want to set up in? Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah or Umm Al Quwain."
+  upload: "For a renewal, please list the documents you currently hold (for example: passport copy, MOA, Ejari)."
+
+abstain: "This case falls outside our verified records, so we will not guess. It has been added to the expert review queue."
+
+disclaimer: "Guidance only, based on the records cited. Not legal advice — confirm with the issuing authority before acting."
+
+results:
+  new:
+    title: "New Setup Plan"
+    summary:
+      - {label: "Structure", slot: "biz.type"}
+      - {label: "Emirate", slot: "location.emirate"}
+      - {label: "Activity", slot: "biz.activity"}
+      - {label: "Governing license", slot: "laws.primary"}
+    sections:
+      - slot: "documents"
+        heading: "Required Documents"
+        item: "{name} ({requirement}) — issued by {issuer}. {how_to_obtain}"
+      - slot: "institutions"
+        heading: "Where to Apply"
+        item: "{name}, {address} — {website}"
+
+  renewal:
+    title: "Renewal Assessment"
+    summary:
+      - {label: "Structure", slot: "biz.type"}
+      - {label: "Emirate", slot: "location.emirate"}
+      - {label: "Activity", slot: "biz.activity"}
+      - {label: "Governing license", slot: "laws.primary"}
+    sections:
+      - slot: "renewal.missing"
+        heading: "Missing Documents"
+        item: "{name} — issued by {issuer}. {how_to_obtain}"
+      - slot: "renewal.matched"
+        heading: "Documents on File"
+        item: "{name}"
+      - slot: "penalties"
+        heading: "Possible Penalties"
+        item: "{condition}: {amount}. {note}"
+      - slot: "alternatives"
+        heading: "Alternative Documents"
+        item: "Instead of {missing_doc}: {alternative_doc}. {conditions}"

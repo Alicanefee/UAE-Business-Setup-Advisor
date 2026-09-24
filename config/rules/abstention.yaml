@@ -1,0 +1,16 @@
+# Abstention policy — when the system refuses to answer and escalates to a
+# human expert instead of guessing.
+version: 1
+
+min_confidence: 0.65
+
+# A result is only composed when every one of these slots is backed by a
+# verified claim.
+mandatory_slots:
+  - "biz.type"
+  - "location.emirate"
+  - "biz.activity"
+  - "laws.primary"
+
+on_abstain:
+  escalate: true
