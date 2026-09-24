@@ -129,7 +129,7 @@ data: {}
 | `state` | One per state-machine step |
 | `question` | More information needed; send the answer with the same `session_id` |
 | `result` | Composed answer; every line carries its source |
-| `abstain` | No verified record covers the case; escalated to the expert queue |
+| `abstain` | No verified record covers the case; logged to the escalation queue |
 | `error` | Internal error (no internals are exposed) |
 | `end` | Stream complete |
 

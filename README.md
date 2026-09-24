@@ -8,7 +8,7 @@
 [![Tests: pytest](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> ⚠️ **For demonstration and testing purposes only.** All records in this repository are sample data and have not been verified against official sources. The output is not legal, tax or regulatory advice. **All legal obligations arising from use of this software remain solely with the user.** See [DISCLAIMER.md](DISCLAIMER.md).
+> ⚠️ **For demonstration and testing purposes only.** All records in this repository are sample data and have not been verified against official sources. The output is not legal, tax or regulatory advice. **All legal obligations arising from use of this software remain solely with the user.** Read the full [Legal Disclaimer and Terms of Use](DISCLAIMER.md) before use.
 
 ---
 
@@ -21,7 +21,7 @@ This advisor answers those questions **only from curated records**:
 - **New setup** — structure (mainland / free zone / multinational), governing license, required documents, where to apply
 - **Renewal** — which required documents are missing, applicable penalties, accepted alternative documents
 - **Clarifying questions** — when the request is incomplete (emirate, activity, target market), it asks instead of assuming
-- **Abstention** — when no verified record covers the case, it says so and routes the case to a human expert queue
+- **Abstention** — when no verified record covers the case, it says so and logs the case to an escalation queue (intended for human expert review in a production deployment)
 
 ## How it prevents hallucination
 
@@ -58,7 +58,7 @@ This advisor answers those questions **only from curated records**:
 └───────────────────┬──────────────────────────────────────────────┘
 ┌───────────────────▼──────────────┐   ┌───────────────────────────┐
 │  SQLite (canonical records)      │   │  records/escalations.jsonl │
-│  laws · documents · penalties ·  │   │  (expert review queue)     │
+│  laws · documents · penalties ·  │   │  (escalation queue)        │
 │  alternatives · institutions ·   │   └───────────────────────────┘
 │  rules                           │
 └──────────────────────────────────┘
@@ -117,7 +117,7 @@ When no record covers the request, it abstains:
 $ python cli.py "Software company in Dubai selling to local customers"
 [flow] start → classify → route_law → abstain
 
-! This case falls outside our verified records, so we will not guess. It has been added to the expert review queue.
+! This case falls outside our verified records, so we will not guess. It has been logged to the escalation queue (demonstration only — no human review).
   (reason: no_law_in_force:mainland/Dubai/software_development)
 ```
 
@@ -164,7 +164,7 @@ UAE-Business-Setup-Advisor/
 ├── services/
 │   ├── orchestrator.py          ← FSM driver, verification, composition, escalation
 │   ├── composer.py              ← Template rendering with per-line sources
-│   ├── escalation.py            ← Expert review queue
+│   ├── escalation.py            ← Escalation queue (JSON Lines)
 │   └── llm.py                   ← Optional vocabulary-constrained LLM extractor
 ├── storage/
 │   ├── schema.sql

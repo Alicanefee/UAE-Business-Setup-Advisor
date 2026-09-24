@@ -137,7 +137,7 @@ The law router returns the most specific law in force (emirate-specific before f
 | Model cites a real record but alters it | The hash of the altered content does not match the row |
 | Record changes after it was read | Recomputed hash differs at verification time |
 | Outdated law or penalty | Stage 3 checks the effective window from the database |
-| Unknown combination (e.g. mainland software in Dubai with no record) | Law router finds nothing → abstain → expert queue |
+| Unknown combination (e.g. mainland software in Dubai with no record) | Law router finds nothing → abstain → escalation queue |
 | Missing information | Targeted question instead of an assumption |
 | Step skipped by a bug | `ALLOWED` matrix raises `IllegalTransition` |
 | Prompt injection into generated text | The LLM never generates user-facing text |
