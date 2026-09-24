@@ -80,7 +80,7 @@ Response — one of three statuses:
                   "source": "document:D-FZ-001"}]}
     ],
     "sources": ["rule:classifier", "rule:location", "law:L-FZ-DXB-001", "document:D-FZ-001"],
-    "disclaimer": "Guidance only, based on the records cited. …"
+    "disclaimer": "Demonstration only — based on unverified sample records. …"
   },
   "question": null,
   "abstain": null,

@@ -8,6 +8,8 @@
 [![Tests: pytest](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> ⚠️ **For demonstration and testing purposes only.** All records in this repository are sample data and have not been verified against official sources. The output is not legal, tax or regulatory advice. **All legal obligations arising from use of this software remain solely with the user.** See [DISCLAIMER.md](DISCLAIMER.md).
+
 ---
 
 ## What it does
@@ -143,6 +145,7 @@ Possible Penalties
 
 ```
 UAE-Business-Setup-Advisor/
+├── DISCLAIMER.md                ← Demonstration-only terms and user responsibility
 ├── api/main.py                  ← FastAPI app: /v1/chat, /v1/chat/stream, /v1/health, static UI
 ├── cli.py                       ← Command-line demo
 ├── core/
@@ -178,9 +181,14 @@ UAE-Business-Setup-Advisor/
 
 ## ⚠️ Disclaimer
 
-- This is independent R&D and is not affiliated with or endorsed by any UAE authority.
-- The seed records in `data/seed/` were compiled from public information for development and demonstration. Fees, penalties, document requirements and contact details change frequently — **verify every figure with the issuing authority before relying on it.**
-- The advisor provides guidance, not legal advice.
+- **This project is for demonstration and testing purposes only.** It must not be used for real business setup, license renewal or compliance decisions.
+- The records in `data/seed/` are **sample data** compiled for development and testing. They have not been verified against official sources and may be incomplete, outdated or incorrect.
+- The output is **not legal, tax, financial or regulatory advice**.
+- **The user is solely responsible** for verifying all requirements with the issuing authorities and for **all legal, regulatory, tax and financial obligations** arising from use of this software or decisions based on its output.
+- The author accepts no liability for any loss, penalty or other consequence arising from its use.
+- This is independent R&D and is not affiliated with or endorsed by any UAE authority or free zone.
+
+Full terms: [DISCLAIMER.md](DISCLAIMER.md).
 
 ## Author
 

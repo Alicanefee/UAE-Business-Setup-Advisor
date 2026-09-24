@@ -28,7 +28,7 @@ questions:
 
 abstain: "This case falls outside our verified records, so we will not guess. It has been added to the expert review queue."
 
-disclaimer: "Guidance only, based on the records cited. Not legal advice — confirm with the issuing authority before acting."
+disclaimer: "Demonstration only — based on unverified sample records. Not legal advice. You are solely responsible for verifying requirements with the issuing authority and for all legal obligations arising from your decisions."
 
 results:
   new:

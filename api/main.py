@@ -28,7 +28,10 @@ app = FastAPI(
     version="0.1.0",
     description=(
         "Evidence-backed UAE business setup advisor. Every statement in a response "
-        "is bound to a source record; when no source exists, the system abstains."
+        "is bound to a source record; when no source exists, the system abstains.\n\n"
+        "**For demonstration and testing purposes only.** Records are unverified sample "
+        "data and responses are not legal advice. All legal obligations arising from use "
+        "of this API remain solely with the user."
     ),
 )
 

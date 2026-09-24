@@ -63,4 +63,4 @@ The seed data is a development sample, not a complete register:
 
 ## Accuracy
 
-The seed records were compiled from public information for development and demonstration. Fees, penalties, document requirements and contact details change frequently and must be verified with the issuing authority before use. Each record should carry a review date and a reference to its official source before production use — see [roadmap.md](roadmap.md).
+The seed records are sample data for demonstration and testing purposes only. They have not been verified against official sources; fees, penalties, document requirements and contact details may be incomplete, outdated or incorrect. All legal obligations arising from their use remain solely with the user — see [DISCLAIMER.md](../DISCLAIMER.md). Each record must carry a review date and a reference to its official source before any production use — see [roadmap.md](roadmap.md).
